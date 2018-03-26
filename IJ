@@ -39,3 +39,58 @@ Ctrl+W 选中代码，连续按会有其他效果
 选中文本，按Alt+F3 ，逐个往下查找相同文本，并高亮显示。
 Ctrl+Up/Down 光标跳转到第一行或最后一行下
 Ctrl+B 快速打开光标处的类或方法
+
+
+导航新特性:http://www.importnew.com/15462.html 
+
+插件:
+一、            IdeaVim
+显然的，vim支持，安装后开关在Tools菜单，配置在Settings -> Other Settings，配置里主要是对冲突快捷键的选择。
+ 
+二、            BashSupport
+Shell脚本语法高亮，最主要的就是这个功能，安装后无需配置啥。
+ 
+三、            Cmdsupport
+Bat脚本语法高亮。
+ 
+四、            idea-gitignore
+.gitignore文件语法高亮、路径关联，可以直接在需要忽略的文件/文件夹上右击Add to .gitignore File即可添加忽略，很方便。
+ 
+五、            ini4idea
+ini文件语法支持。
+ 
+六、            mybatis_plus
+很好用的插件，mybatis的xml文件纠错、自动补全，与map文件关联
+3.154版本破解：从官方库安装后用附件iMybatis-3.154.jar.zip中的jar替换“C:\Users\你的账户目录\.IntelliJIdea2.*\config\plugins\mybatis_plus\lib”目录下的jar。或者直接下载附件Mybatis_plugin-3.154.zip，然后从本地安装插件直接就是破解好的。没有代码生成的需求只要跳转功能的话推荐此版本
+
+3.53版本破解：在插件管理中卸载旧版，然后重新从官方库安装；然后在下载附件ideaagent-1.11.zip，然后在插件管理中选择从本地安装该插件ideaagent。也就是说该方法要安装两个插件，一个是Mybtais-3.53，一个是ideaagent。原作者链接：https://github.com/mrshawnho/ideaagent
+
+
+一、            安装官方版本
+在Idea中，File->Settings->Plugins，选择Browse Repositories…，搜索Mybatis，安装Mybatis Plugin，安装完成后直接关闭idea
+ 
+二、            替换jar包内的相关class文件
+下载profile项目（项目地址：https://github.com/myoss/profile）之后，找到目录：profile\idea\plugin\MybatisPlugin，并选择IntelliJ Idea中安装Mybatis Plugin的版本。
+打开目录：
+C:\Users\你的账户目录\.IntelliJIdea2.*\config\plugins\mybatis_plus\lib
+用WinRAR打开mybatis_plus.jar
+将目录profile\idea\plugin\MybatisPlugin\对应的版本号下的com文件夹拖进WinRAR，根据提示覆盖即可。
+（Ps：Mac的目录一般在
+/Users/你的账户目录/Library/Application Support/IntelliJIdea15/mybatis_plus/lib/）
+
+提供一个专门破解的开源项目地址，可以clone到本地随时更新，基本是跟上插件的更新速度的。
+https://github.com/myoss/profile.git
+ 
+ 
+三、            启动IntelliJ Idea
+ 
+另外，这里提供已经替换好class的最新版本2.92的jar包，直接替换lib目录下的mybatis_plus.jar就好了。
+如果不打算更新，你可以直接安装本地目录插件。
+ 
+七、            findbugs、checkstyle、pmd
+不废话，谁都懂
+ 
+八、            LiveEdit
+配合Chrome插件JetBrains IDE Support使用，编辑前端时实时刷新，无需每次重新打开。选中相应的html右键选择Debug即可。
+
+ 安装Chrome插件JetBrains IDE Support
